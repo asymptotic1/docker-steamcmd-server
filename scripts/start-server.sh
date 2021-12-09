@@ -24,13 +24,13 @@ if [ "${USERNAME}" == "" ]; then
         ${STEAMCMD_DIR}/steamcmd.sh \
         +login anonymous \
         +force_install_dir ${SERVER_DIR} \
-        +app_update ${GAME_ID} -beta ${GAME_BRANCH} validate \
+        +app_update ${GAME_ID} validate \
         +quit
     else
         ${STEAMCMD_DIR}/steamcmd.sh \
         +login anonymous \
         +force_install_dir ${SERVER_DIR} \
-        +app_update ${GAME_ID} -beta ${GAME_BRANCH} \
+        +app_update ${GAME_ID} \
         +quit
     fi
 else
@@ -39,13 +39,13 @@ else
         ${STEAMCMD_DIR}/steamcmd.sh \
         +login ${USERNAME} ${PASSWRD} \
         +force_install_dir ${SERVER_DIR} \
-        +app_update ${GAME_ID} -beta ${GAME_BRANCH} validate \
+        +app_update ${GAME_ID} validate \
         +quit
     else
         ${STEAMCMD_DIR}/steamcmd.sh \
         +login ${USERNAME} ${PASSWRD} \
         +force_install_dir ${SERVER_DIR} \
-        +app_update ${GAME_ID} -beta ${GAME_BRANCH} \
+        +app_update ${GAME_ID} \
         +quit
     fi
 fi
